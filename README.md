@@ -1,15 +1,20 @@
 # Giovanni Dal Lago
-Personal portfolio: robotics, tactile sensing, manipulation, electronics, and life off the bench.
+Personal website about robotics, tactile sensing, electronics, and Astreo.
 
 ## Development
-`npm install` then `npm run dev`.
+`npm install` and `npm run dev`.
 
-## GitHub Pages
-`npm run build:github` exports the site to `out/`. Pushing main publishes it with GitHub Actions.
+## Publishing
+`npm run build:github` exports to `out/`. Pushing `main` publishes via GitHub Pages.
 
-## Content
-The site intentionally uses broad descriptions of professional work. Do not add private technical specifications, unpublished measurements, employer imagery, original application PDFs, or the original CV without review.
+## Pages
+- `/`: short biography
+- `/work/`: experience, research, and public projects
+- `/elsewhere/`: Astreo
 
-The robotic-hand visual is a conceptual CSS sketch, not employer hardware. The manipulator image comes from Giovanni's public project. The Astreo photo comes from astreo.org.
+## Content and privacy
+Professional work is described at a high level. Do not add unpublished specifications, employer imagery, application PDFs, or the original CV without review.
+The robot image comes from Giovanni's public project. The piano image comes from astreo.org. Navigation, body text, and imagery are intentionally kept simple.
 
-Music is intentionally a truthful empty state. The spinning record is decorative and does not play audio. To activate a listening diary, add a verified Last.fm username and fetch public recent listening with a scheduled GitHub Action; store any API key in GitHub Actions secrets, not browser code. Do not invent listening history.
+## Future music section
+Add a listening diary only after Giovanni supplies a verified Last.fm profile or music links. Do not publish invented taste, fake listening activity, or placeholder records. Last.fm can be fetched by a scheduled GitHub Action with the API key in Actions secrets; the public site should consume a static, sanitized JSON file.
