@@ -67,3 +67,22 @@ figcaption { text-align: center; font-size: 13px; color: var(--muted); margin-to
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print { .site-header nav, .site-footer, .home-links { display: none; } .page { max-width: none; } a { color: inherit; text-decoration: none; } }
+
+/* Media keeps the same quiet layout as the rest of the site. */
+figure video { display: block; width: 100%; height: auto; background: #f3f3f3; }
+.youtube-video { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #f3f3f3; }
+.youtube-video iframe { display: block; border: 0; width: 100%; height: 100%; }
+.video-cover { display: block; border: 0; padding: 0; width: 100%; height: 100%; position: relative; cursor: pointer; color: #fff; background: #eee; font: inherit; }
+.video-cover img { width: 100%; height: 100%; object-fit: cover; }
+.video-cover:focus-visible { outline: 2px solid #6a808c; outline-offset: 5px; }
+.play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; width: 54px; height: 54px; padding-left: 3px; border-radius: 50%; background: #111b; font-family: Arial, sans-serif; font-size: 20px; transition: background .15s; }
+.video-cover:hover .play-button { background: #111e; }
+.cover-label { position: absolute; bottom: 10px; right: 12px; background: #111b; padding: 2px 9px; font-size: 12px; }
+.hand-videos { max-width: 640px; margin: 30px auto 15px; display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 24px; align-items: start; }
+.hand-videos figure { width: 100%; margin: 0; }
+.media-note { text-align: center; font-size: 13px; color: var(--muted); }
+@media (max-width: 620px) {
+  .hand-videos { grid-template-columns: 1fr; gap: 26px; }
+  .hand-videos .hand-short { max-width: 240px; margin: 0 auto; }
+}
+@media (prefers-reduced-motion: reduce) { .play-button { transition: none; } }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
+import YouTubeVideo from '../components/youtube-video';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/work/' },
@@ -20,6 +21,31 @@ export default function Work() {
       <section>
         <h2>Foundation Robotics <span className="when">2026–present</span></h2>
         <p>Electrical engineer on the hands team, working on electronics and tactile sensing for humanoid robotic hands.</p>
+        <div className="hand-videos">
+          <figure>
+            <YouTubeVideo id="Nhr7ZnFZYkA" title="Testing Our New Robotic Hand — Foundation Robotics" />
+            <figcaption>Our hand in testing. <a href="https://www.youtube.com/watch?v=Nhr7ZnFZYkA" target="_blank" rel="noopener noreferrer">Foundation Robotics, on YouTube</a>.</figcaption>
+          </figure>
+          <figure className="hand-short">
+            <video controls playsInline preload="none" poster="/media/foundation-hand.jpg" width={720} height={960} aria-label="Foundation robotic hand moving its fingers on a test bench">
+              <source src="https://video.twimg.com/amplify_video/2093174836550041604/vid/avc1/720x960/e9h8kqQhDG2Xw_a2.mp4?tag=29" type="video/mp4" />
+              <a href="https://x.com/andreaesposito/status/2093174852010262606">Watch the hand demo on X</a>
+            </video>
+            <figcaption>A bench test. <a href="https://x.com/andreaesposito/status/2093174852010262606" target="_blank" rel="noopener noreferrer">Video by Andrea Esposito</a>.</figcaption>
+          </figure>
+        </div>
+        <p className="media-note">Another public test: <a href="https://x.com/andreaesposito/status/2083661422643560604" target="_blank" rel="noopener noreferrer">catching baseballs</a>.</p>
+      </section>
+      <section id="tactile-sensing">
+        <h2>Tactile sensing</h2>
+        <p>A small, early-stage sensor prototype I built. The map responds as I touch the surface. More advanced versions are not shown here.</p>
+        <figure>
+          <video controls playsInline preload="none" poster="/media/tactile-prototype.jpg" width={1200} height={480} aria-label="Early tactile sensor prototype: touching the sensor produces a response on the live heatmap">
+            <source src="/media/tactile-prototype.mp4" type="video/mp4" />
+            <a href="/media/tactile-prototype.mp4">Watch the early tactile sensor demonstration</a>
+          </video>
+          <figcaption>Early prototype. Contact on the right; live response on the left.</figcaption>
+        </figure>
       </section>
       <section>
         <h2>UC Berkeley, Khanna Lab</h2>
@@ -33,6 +59,10 @@ export default function Work() {
         <h2>Selected projects</h2>
         <h3><a href="https://github.com/gioda954/Robotics_hand" target="_blank" rel="noopener noreferrer">Robotic hand</a></h3>
         <p>A tendon-driven hand with custom electronics, motor control, and pressure feedback for grasping. A personal project exploring how contact sensing can guide a grasp.</p>
+        <figure>
+          <YouTubeVideo id="hA0uSn5qXlU" title="Robotics Hand Demo — Giovanni Dal Lago" />
+          <figcaption>An earlier hand project, from my time at school. <a href="https://www.youtube.com/watch?v=hA0uSn5qXlU" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>.</figcaption>
+        </figure>
         <h3><a href="https://github.com/gioda954/Vision_based_manipulator" target="_blank" rel="noopener noreferrer">Vision-based manipulation</a></h3>
         <p>A pick-and-place system combining object detection, pose estimation, and robot control.</p>
         <figure>

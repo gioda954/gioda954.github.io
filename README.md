@@ -18,3 +18,8 @@ The robot image comes from Giovanni's public project. The piano image comes from
 
 ## Future music section
 Add a listening diary only after Giovanni supplies a verified Last.fm profile or music links. Do not publish invented taste, fake listening activity, or placeholder records. Last.fm can be fetched by a scheduled GitHub Action with the API key in Actions secrets; the public site should consume a static, sanitized JSON file.
+
+## Work videos
+YouTube demos use local poster images and load a privacy-enhanced player only after a click. Foundation clips are attributed to their public sources; the X video streams from the original publisher’s CDN and keeps an original-post link.
+
+The tactile demonstration is an 18-second, silent excerpt (00:32–00:50) from Giovanni’s supplied early-prototype film. Two synchronized crops show contact and the heatmap, excluding other monitor content. The original MOV, audio and source metadata are not published. This is labelled as an early-stage prototype, not the latest sensor.
