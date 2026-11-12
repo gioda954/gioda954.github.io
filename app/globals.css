@@ -86,3 +86,9 @@ figure video { display: block; width: 100%; height: auto; background: #f3f3f3; }
   .hand-videos .hand-short { max-width: 240px; margin: 0 auto; }
 }
 @media (prefers-reduced-motion: reduce) { .play-button { transition: none; } }
+
+.earlier-demo { margin: 24px 0 34px; }
+.earlier-demo summary { cursor: pointer; color: var(--heading); font-size: 15px; }
+.earlier-demo summary:focus-visible { outline: 2px solid #6a808c; outline-offset: 5px; }
+.earlier-demo[open] summary { margin-bottom: 18px; }
+.earlier-demo > p { font-size: 15px; }

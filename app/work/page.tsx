@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/work/' },
   title: 'Work · Giovanni Dal Lago',
   description: 'Electronics, tactile sensing, and robotic manipulation. Research and selected projects by Giovanni Dal Lago.',
-  openGraph: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', url: '/work/', images: [{ url: '/robot.png', width: 1524, height: 602, alt: 'Vision-based manipulation project' }] },
-  twitter: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', images: ['/robot.png'] },
+  openGraph: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', url: '/work/', images: [{ url: '/media/hand-tactile-prototype.jpg', width: 1600, height: 900, alt: 'Robotic hand prototype showing tactile sensing' }] },
+  twitter: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', images: ['/media/hand-tactile-prototype.jpg'] },
 };
 
 export default function Work() {
@@ -38,14 +38,25 @@ export default function Work() {
       </section>
       <section id="tactile-sensing">
         <h2>Tactile sensing</h2>
-        <p>A small, early-stage sensor prototype I built. The map responds as I touch the surface. More advanced versions are not shown here.</p>
+        <p>Touch on a robotic hand, visualized in real time. This is a development prototype, not the final version used on the robot.</p>
         <figure>
-          <video controls playsInline preload="none" poster="/media/tactile-prototype.jpg" width={1200} height={480} aria-label="Early tactile sensor prototype: touching the sensor produces a response on the live heatmap">
-            <source src="/media/tactile-prototype.mp4" type="video/mp4" />
-            <a href="/media/tactile-prototype.mp4">Watch the early tactile sensor demonstration</a>
+          <video controls playsInline preload="none" poster="/media/hand-tactile-prototype.jpg" width={1600} height={900} aria-label="Development hand prototype: contact on the hand and fingers appears on the tactile visualization; the actuators below the hand are blurred">
+            <source src="/media/hand-tactile-prototype.mp4" type="video/mp4" />
+            <a href="/media/hand-tactile-prototype.mp4">Watch the hand tactile sensing prototype</a>
           </video>
-          <figcaption>Early prototype. Contact on the right; live response on the left.</figcaption>
+          <figcaption>Development prototype, not the final robot hardware. Actuator details are blurred.</figcaption>
         </figure>
+        <details className="earlier-demo">
+          <summary>Earlier sensor experiment</summary>
+          <p>A small, early-stage sensor prototype I built.</p>
+          <figure>
+            <video controls playsInline preload="none" poster="/media/tactile-prototype.jpg" width={1200} height={480} aria-label="Early tactile sensor prototype: touching the sensor produces a response on the live heatmap">
+              <source src="/media/tactile-prototype.mp4" type="video/mp4" />
+              <a href="/media/tactile-prototype.mp4">Watch the early tactile sensor demonstration</a>
+            </video>
+            <figcaption>Early prototype. Contact on the right; live response on the left.</figcaption>
+          </figure>
+        </details>
       </section>
       <section>
         <h2>UC Berkeley, Khanna Lab</h2>
