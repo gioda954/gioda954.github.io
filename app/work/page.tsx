@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/work/' },
   title: 'Work · Giovanni Dal Lago',
   description: 'Electronics, tactile sensing, and robotic manipulation. Research and selected projects by Giovanni Dal Lago.',
-  openGraph: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', url: '/work/', images: [{ url: '/media/hand-tactile-prototype.jpg', width: 1600, height: 900, alt: 'Robotic hand prototype showing tactile sensing' }] },
-  twitter: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', images: ['/media/hand-tactile-prototype.jpg'] },
+  openGraph: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', url: '/work/', images: [{ url: '/media/hand-tactile-demo.jpg', width: 1600, height: 900, alt: 'Robotic hand prototype showing tactile sensing' }] },
+  twitter: { title: 'Work · Giovanni Dal Lago', description: 'Electronics, tactile sensing, and robotic manipulation.', images: ['/media/hand-tactile-demo.jpg'] },
 };
 
 export default function Work() {
@@ -40,11 +40,11 @@ export default function Work() {
         <h2>Tactile sensing</h2>
         <p>Touch on a robotic hand, visualized in real time. This is a development prototype, not the final version used on the robot.</p>
         <figure>
-          <video controls playsInline preload="none" poster="/media/hand-tactile-prototype.jpg" width={1600} height={900} aria-label="Development hand prototype: contact on the hand and fingers appears on the tactile visualization; the actuators below the hand are blurred">
-            <source src="/media/hand-tactile-prototype.mp4" type="video/mp4" />
-            <a href="/media/hand-tactile-prototype.mp4">Watch the hand tactile sensing prototype</a>
+          <video controls playsInline preload="none" poster="/media/hand-tactile-demo.jpg" width={1600} height={900} aria-label="Development hand prototype: contact on the hand and fingers appears on the tactile visualization">
+            <source src="/media/hand-tactile-demo.mp4" type="video/mp4" />
+            <a href="/media/hand-tactile-demo.mp4">Watch the hand tactile sensing prototype</a>
           </video>
-          <figcaption>Development prototype, not the final robot hardware. Actuator details are blurred.</figcaption>
+          <figcaption>Development prototype, not the final robot hardware.</figcaption>
         </figure>
         <details className="earlier-demo">
           <summary>Earlier sensor experiment</summary>
