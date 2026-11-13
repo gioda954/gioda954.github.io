@@ -82,8 +82,14 @@ export default function Work() {
         </figure>
       </section>
       <section>
-        <h2>Physics</h2>
+        <h2 id="physics">Physics</h2>
         <p>In 2025, my team won the Italian national physics competition and represented Italy at the International Physicists’ Tournament, finishing seventh worldwide.</p>
+        <figure className="competition-logo">
+          <a href="https://ipt.science/" target="_blank" rel="noopener noreferrer">
+            <Image src="/media/ipt-logo.png" alt="International Physicists’ Tournament logo" width={700} height={700} sizes="220px" />
+          </a>
+          <figcaption><a href="https://ipt.science/" target="_blank" rel="noopener noreferrer">International Physicists’ Tournament</a></figcaption>
+        </figure>
       </section>
     </main>
     <Footer />

@@ -92,3 +92,5 @@ figure video { display: block; width: 100%; height: auto; background: #f3f3f3; }
 .earlier-demo summary:focus-visible { outline: 2px solid #6a808c; outline-offset: 5px; }
 .earlier-demo[open] summary { margin-bottom: 18px; }
 .earlier-demo > p { font-size: 15px; }
+
+.competition-logo { max-width: 220px; margin: 28px auto; }
