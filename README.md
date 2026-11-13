@@ -26,4 +26,4 @@ The tactile demonstration is an 18-second, silent excerpt (00:32–00:50) from G
 
 The primary tactile demo is the supplied hand prototype film, exported to 1600×900 H.264 at 30 fps with no audio or source metadata. The published export has no blur, as requested by Giovanni; its poster is extracted from the same export. The source MP4 stays outside the repository. Visible copy explicitly identifies it as a development prototype, not the final hardware used on the robot. The earlier flat-sensor demonstration is retained in a collapsed disclosure.
 
-The Physics section uses the official IPT logo from https://ipt.science/IPT_logo.png and links to the tournament website.
+The Physics section uses the group photograph supplied by Giovanni and links to the tournament website.
